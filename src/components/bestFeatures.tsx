@@ -6,7 +6,7 @@ import bestFeatures3 from "../../public/bestFeatures3.png";
 
 const BestFeatures = () => {
   return (
-    <section className="text-gray-600 body-font max-w-7xl mx-auto">
+    <section className="text-gray-600 body-font max-w-7xl mx-auto mt-4">
       <div className="container px-5 pt-6 mx-auto">
         <div className="flex flex-wrap -m-4 text-center justify-center">
           {/* Feature 1 */}
@@ -16,7 +16,7 @@ const BestFeatures = () => {
               src={bestFeatures1}
               width={120}
               height={120}
-              className="mx-auto mb-4 object-contain"
+              className="mx-auto mb-4 w-[80px] h-[80px] object-contain"
             />
             <h2 className="title-font font-semibold text-xl text-[#000000]">
               FREE AND FAST DELIVERY
@@ -33,7 +33,7 @@ const BestFeatures = () => {
               src={bestFeatures2}
               width={120}
               height={120}
-              className="mx-auto mb-4 object-contain"
+              className="mx-auto mb-4 w-[80px] h-[80px] object-contain"
             />
             <h2 className="title-font text-xl font-semibold text-[#000000]">
               24/7 CUSTOMER SERVICE
@@ -50,7 +50,7 @@ const BestFeatures = () => {
               src={bestFeatures3}
               width={120}
               height={120}
-              className="mx-auto mb-4 object-contain"
+              className="mx-auto mb-4 w-[80px] h-[80px] object-contain"
             />
             <h2 className="title-font  text-xl font-semibold text-[#000000]">
               MONEY BACK GUARANTEE

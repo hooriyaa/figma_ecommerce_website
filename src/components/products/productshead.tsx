@@ -50,7 +50,7 @@ export const Productshead = ({
             className="object-contain transition-transform duration-300 hover:scale-105"
           />
         </div>
-        <Button className="w-full  hover:bg-black  hover:text-white bg-transparent ">
+        <Button className="w-full  hover:bg-black  hover:text-white bg-transparent mb-3">
           Add To Cart
         </Button>
       </div>

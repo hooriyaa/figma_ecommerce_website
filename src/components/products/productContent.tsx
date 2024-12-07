@@ -88,10 +88,10 @@ export const ProductContent = () => {
         <div>
           <div className="flex items-center gap-4 mb-2">
             <div className="w-5 h-10 bg-red-500 rounded-sm" />
-            <h2 className="text-red-500 font-medium">This Month</h2>
+            <h2 className="text-red-500 font-medium">Our Products</h2>
           </div>
           <div className="flex items-center gap-8">
-            <h3 className="text-3xl font-semibold">Best Selling Products</h3>
+            <h3 className="text-3xl font-semibold">Explore Our Products</h3>
           </div>
         </div>
 

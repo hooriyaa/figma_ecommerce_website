@@ -26,7 +26,7 @@ export function SheetDemo() {
           <SheetClose asChild>
             <Link
               href="/"
-              className="hover:text-[#227B94] transition duration-300"
+              className="hover:border-b-2 border-zinc-300 transition duration-300"
             >
               Home
             </Link>
@@ -34,8 +34,8 @@ export function SheetDemo() {
 
           <SheetClose asChild>
             <Link
-              href="/aontact"
-              className="hover:text-[#227B94] transition duration-300"
+              href="/contact"
+              className="hover:border-b-2 border-zinc-300 transition duration-300"
             >
               Contact
             </Link>
@@ -44,7 +44,7 @@ export function SheetDemo() {
           <SheetClose asChild>
             <Link
               href="/about"
-              className="hover:text-[#227B94] transition duration-300"
+              className="hover:border-b-2 border-zinc-300 transition duration-300"
             >
               About
             </Link>
@@ -52,8 +52,8 @@ export function SheetDemo() {
 
           <SheetClose asChild>
             <Link
-              href="/sign-up"
-              className="hover:text-[#227B94] transition duration-300"
+              href="/signup"
+              className="hover:border-b-2 border-zinc-300 transition duration-300"
             >
               Sign Up
             </Link>

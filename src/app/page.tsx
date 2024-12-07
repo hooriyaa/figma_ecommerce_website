@@ -41,7 +41,6 @@ export default function Home() {
       </section>
       <section className="min-h-screen ">
         <Categories />
-        <CategoriesContent />
         <BestSellingProductItems />
         <main className="min-h-screen bg-background">
           <Category />

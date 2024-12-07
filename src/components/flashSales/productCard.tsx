@@ -54,7 +54,7 @@ export const ProductCard = ({
         />
          
       </div>
-      <Button className="w-full  hover:bg-black  hover:text-white bg-transparent ">
+      <Button className="w-full  hover:bg-black  hover:text-white bg-transparent mb-4">
         Add To Cart
       </Button>
      </div>
@@ -84,3 +84,4 @@ export const ProductCard = ({
     </div>
   );
 };
+

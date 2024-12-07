@@ -1,73 +1,126 @@
-import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { AiOutlineSearch } from 'react-icons/ai';
-import { BsCartFill } from 'react-icons/bs';
+import Image from "next/image";
+import Link from "next/link";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FiTwitter } from "react-icons/fi";
+import { RiLinkedinLine } from "react-icons/ri";
 
 const Footer = () => {
- return (
-   <footer className="bg-black text-white py-8 lg:px-16 mt-9 max-w-7xl mx-auto px-4">
-     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-       <div className="space-y-4">
-         <h3 className="text-lg font-bold">Exclusive</h3>
-         <p>Subscribe</p>
-         <p>Get 10% off your first order</p>
-         <div className="relative">
-           <input
-             type="email"
-             placeholder="Enter your email"
-             className="bg-transparent border border-gray-400 rounded-full py-2 px-4 w-full pr-10"
-           />
-           <button className="absolute top-1/2 right-2 transform -translate-y-1/2 text-gray-400 hover:text-white">
-             <AiOutlineSearch size={18} />
-           </button>
-         </div>
-       </div>
-       <div className="space-y-4">
-         <h3 className="text-lg font-bold">Support</h3>
-         <p>111 Bijoy sarani, Dhaka, Dhaka 1215, Bangladesh</p>
-         <p>exclusive@gmail.com</p>
-         <p>+8801618-88888-9999</p>
-       </div>
-       <div className="space-y-4">
-         <h3 className="text-lg font-bold">Account</h3>
-         <p>My Account</p>
-         <p>Login / Register</p>
-         <p>Cart</p>
-         <p>Wishlist</p>
-         <p>Shop</p>
-       </div>
-       <div className="space-y-4">
-         <h3 className="text-lg font-bold">Quick Link</h3>
-         <p>Privacy Policy</p>
-         <p>Terms Of Use</p>
-         <p>FAQ</p>
-         <p>Contact</p>
-       </div>
-     </div>
-     <div className="mt-8 flex justify-end items-center">
-       <div className="flex space-x-4">
-         <a href="#" className="text-gray-400 hover:text-white">
-           <FaFacebook size={20} />
-         </a>
-         <a href="#" className="text-gray-400 hover:text-white">
-           <FaTwitter size={20} />
-         </a>
-         <a href="#" className="text-gray-400 hover:text-white">
-           <FaInstagram size={20} />
-         </a>
-         <a href="#" className="text-gray-400 hover:text-white">
-           <FaLinkedin size={20} />
-         </a>
-         <a href="#" className="text-gray-400 hover:text-white">
-           <BsCartFill size={20} />
-         </a>
-       </div>
-     </div>
-     <div className='flex justify-center items-center border-t border-[#FFFFFF] mt-7 w-full'>
-     <p className='text-[#ffffffbc] text-base pt-4 '>© Copyright Himol 2022. All right reserved</p>
-     </div>
-   </footer>
- );
+  return (
+    <footer className="bg-black text-white pt-10 mt-14">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div>
+            <h2 className="font-medium text-xl">Exclusive</h2>
+            <p className="mt-4 text-zinc-200 font-light">Subscribe</p>
+            <p className="mt-2 text-zinc-200 font-light">
+              Get 10% off your first order
+            </p>
+            <div className="mt-4 flex items-center border border-white rounded">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="bg-black text-white p-2 flex-grow outline-none rounded-lg"
+              />
+              <button className="p-2">
+                <i className="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+          <div>
+            <h2 className="font-medium text-xl">Support</h2>
+            <p className="mt-4 text-zinc-200 font-light">
+              111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
+            </p>
+            <p className="mt-3 text-zinc-200 font-light">exclusive@gmail.com</p>
+            <p className="mt-3 text-zinc-200 font-light">+88015-88888-9999</p>
+          </div>
+          <div>
+            <h2 className="font-medium text-xl">Account</h2>
+            <ul className="mt-4 space-y-3 text-zinc-200 font-light">
+              <li>My Account</li>
+              <li>Login / Register</li>
+              <li>Cart</li>
+              <li>Wishlist</li>
+              <li>Shop</li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="font-medium text-xl">Quick Link</h2>
+            <ul className="mt-4 space-y-3 text-zinc-200 font-light">
+              <li>Privacy Policy</li>
+              <li>Terms Of Use</li>
+              <li>FAQ</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="font-medium text-xl">Download App</h2>
+            <p className="mt-4 text-zinc-200 font-light">
+              Save $3 with App New User Only
+            </p>
+            <div className="mt-4 flex items-center gap-2">
+              <div className="w-[100px] h-[100px]">
+                <Image
+                  src={"/QrCode.png"}
+                  alt=""
+                  width={200}
+                  height={200}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="">
+                <div className="w-36 h-12">
+                  <Image
+                    src={"/googlePlay.png"}
+                    alt=""
+                    width={200}
+                    height={200}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="w-36 h-12">
+                  <Image
+                    src={"/appstore.png"}
+                    alt=""
+                    width={300}
+                    height={300}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="mt-4 flex space-x-4">
+              <ul className="flex items-center gap-4 mt-4">
+                <li className="w-8 h-8 text-2xl">
+                  <Link href={""}>
+                    <FaFacebookF />
+                  </Link>
+                </li>
+                <li className="w-8 h-8 text-2xl">
+                  <Link href={""}>
+                    <FaInstagram />
+                  </Link>
+                </li>
+                <li className="w-8 h-8 text-2xl">
+                  <Link href={""}>
+                    <FiTwitter />
+                  </Link>
+                </li>
+                <li className="w-8 h-8 text-2xl">
+                  <Link href={""}>
+                    <RiLinkedinLine />
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="mt-10 text-center border-t border-zinc-800 text-zinc-800">
+          <p className="py-6">© Copyright Rimel 2022. All right reserved</p>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
